@@ -1,0 +1,233 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400");
+html {
+  color: #222;
+  font-size: 18px;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+
+a {
+  color: #4DA0A2; }
+  a:hover {
+    color: #6ab6b8; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1em; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em; }
+
+body {
+  background: #fefefe;
+  color: #333; }
+
+.container {
+  max-width: 666px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden; }
+
+.header {
+  text-align: center;
+  margin: 20px 0; }
+
+.headshot {
+  border-radius: 50%;
+  max-width: 200px; }
+
+.brand {
+  margin: 0 auto 15px; }
+  .brand__name {
+    font-family: 'Droid Serif', Times, "Times New Roman", Georgia, serif;
+    font-size: 36px; }
+  .brand__title {
+    font-size: 18px;
+    color: #4DA0A2; }
+
+.social {
+  margin: 5px auto; }
+  .social__icon {
+    width: 35px;
+    margin: 0 3px;
+    vertical-align: center; }
+
+.section__header {
+  font-family: 'Droid Serif', Times, "Times New Roman", Georgia, serif;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; }
+  .section__header::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #d9d9d9; }
+  .section__header:hover::before {
+    border-color: #c0e0e1; }
+  .section__header span {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    background: #fefefe; }
+
+.project__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.project__item {
+  margin-bottom: 30px; }
+.project__title {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #F46345; }
+.project__description {
+  display: inline-block;
+  margin-bottom: 10px; }
+.project__skills-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.project__skills-item {
+  display: inline-block;
+  color: #333;
+  font-size: 14px; }
+  .project__skills-item:not(:last-child)::after {
+    content: "\30FB";
+    margin-left: 3px;
+    color: #F46345; }

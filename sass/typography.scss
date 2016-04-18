@@ -1,0 +1,35 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400');
+
+$primary-color: #F46345;
+$primary-color-light: #FFE0D9;
+$secondary-color: #4DA0A2;
+$secondary-color-light: lighten(#7BB6CD, 30%);
+$secondary-color-dark: #136E91;
+$link-color: #4DA0A2;
+
+@mixin font-serif {
+    font-family: 'Droid Serif', Times, "Times New Roman", Georgia, serif;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: lighten($link-color, 10%);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
