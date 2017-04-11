@@ -216,6 +216,8 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
   color: #F46345; }
+  .project__title:hover {
+    color: #f78b75; }
 .project__description {
   display: inline-block;
   margin-bottom: 10px; }

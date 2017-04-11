@@ -33,9 +33,6 @@ body {
         font-size: 36px;
     }
     &__title {
-        // font-family: 'Droid Serif', serif;
-        // line-height: 0;
-        // margin-left: 10px;
         font-size: 18px;
         color: $secondary-color;
     }
@@ -98,6 +95,10 @@ body {
         font-size: 20px;
         margin-bottom: 10px;
         color: $primary-color;
+
+        &:hover {
+            color: lighten($primary-color, 10%);
+        }
     }
 
     &__description {
@@ -111,12 +112,8 @@ body {
     }
     &__skills-item {
         display: inline-block;
-        // background: $primary-color-light;
-        // border: 1px solid $primary-color;
 
         color: $text-color;
-        // padding: 0 4px 1px;
-        // border-radius: 3px;
         font-size: 14px;
 
         &:not(:last-child) {
